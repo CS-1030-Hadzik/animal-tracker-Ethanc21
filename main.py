@@ -1,11 +1,29 @@
 
+from animal import Animal
+from dog import Dog
+
+
 if __name__ == "__main__":
-    # TODO: Create an instance of the Animal class
-    # TODO: Print the Animal instance
-    # TODO: Call the method to make a generic animal sound
+    # Create an instance of the Animal class
+    animal = Animal(name="Generic Animal", species="Unknown Species")
+    
+    # Print the Animal instance
+    print(animal)
+    
+    # Call the method to make a generic animal sound
+    animal.speak()
 
-    # TODO: Create an instance of the Dog class
-    # TODO: Print the Dog instance
-    # TODO: Call the method to make the dog-specific sound
+    # Create an instance of the Dog class
+    dog = Dog(name="Buddy", species="Canine", breed="Golden Retriever")
+    
+    # Print the Dog instance
+    print(dog)
+    
+    # Call the method to make the dog-specific sound
+    dog.speak()
 
-    # TODO print out all the animals
+    # Print out all the animals (Animal and Dog)
+    print("\nAll Animals:")
+    animals = [animal, dog]
+    for a in animals:
+        print(a)
